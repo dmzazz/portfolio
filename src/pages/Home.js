@@ -139,8 +139,8 @@ const Home = () => {
               <h2 className="text-lg-end" data-aos="fade-left" data-aos-duration="800">
                 Contact Us
               </h2>
-              <p className="py-2 text-lg-end" data-aos="fade-left" data-aos-duration="800">
-                Another portfolio created using the Wordpress CMS contains educational background to projects that have been made.
+              <p className="py-2 text-lg-end fs-4" data-aos="fade-left" data-aos-duration="800">
+                Want to recruit me? Send a message via email at dimaslaylaa@gmail.com{" "}
               </p>
               <Link to="mailto:dimaslaylaa@gmail.com">
                 <button className="border-0 px-4 py-2 float-lg-end" data-aos="fade-left" data-aos-duration="800">
