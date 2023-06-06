@@ -123,7 +123,9 @@ const Home = () => {
                 <div className="card-body pb-5 px-5 p-lg-0">
                   <h3 className="card-title">Portfolio CMS WordPress</h3>
                   <p className="card-text my-4">Another portfolio created using the Wordpress CMS contains educational background to projects that have been made.</p>
-                  <button className="view-project text-light py-3 px-5 border-0 rounded">View Project</button>
+                  <Link to="https://me.dymas.my.id" target="_blank">
+                    <button className="view-project text-light py-3 px-5 border-0 rounded">View Project</button>
+                  </Link>
                 </div>
               </div>
             </div>
