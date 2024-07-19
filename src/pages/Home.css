@@ -147,6 +147,28 @@ nav {
   background-color: #537fe7;
 }
 
+/* Batch tracker */
+
+#projects .batch-tracker {
+  background: rgb(155, 255, 202);
+  background: linear-gradient(90deg, rgba(155, 255, 202, 1) 0%, rgba(95, 255, 180, 1) 100%);
+}
+
+#projects .batch-tracker .view-project {
+  background-color: #537fe7;
+}
+
+/* Smart Fire Evcuation System */
+
+#projects .smart-fire-evacuation-system {
+  background: rgb(155, 255, 202);
+  background: linear-gradient(90deg, rgba(155, 255, 202, 1) 0%, rgba(95, 255, 180, 1) 100%);
+}
+
+#projects .smart-fire-evacuation-system .view-project {
+  background-color: #537fe7;
+}
+
 /* Contact */
 
 #contact .container {

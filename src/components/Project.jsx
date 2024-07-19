@@ -6,6 +6,7 @@ import selfcare from "../assets/img/project-selfcare.png";
 import undangan from "../assets/img/projects-undangan-2.png";
 import warehouse from "../assets/img/projects-warehouse.png";
 import portofolio from "../assets/img/projects-portofolio.png";
+import batchtracker from "../assets/img/project batch tracker.png";
 
 const projects = [
   {
@@ -44,6 +45,24 @@ const projects = [
     imgSrc: portofolio,
     aos: "fade-right",
   },
+  {
+    id: "batch-tracker",
+    title: "Batch Tracker",
+    text: "Provides an accurate and efficient tracking mechanism in the process of submitting and receiving work orders (WO), raw materials (RM), and production support materials (PM) from the Production Planning and Control (PPIC) division to the Warehouse, to Production.",
+    link: "#batch-tracker",
+    linkText: "Private",
+    imgSrc: batchtracker,
+    aos: "fade-left",
+  },
+  // {
+  //   id: "smart-fire-evacuation-system",
+  //   title: "Smart Fire Evacuation System",
+  //   text: "Provides an accurate and efficient tracking mechanism in the process of submitting and receiving work orders (WO), raw materials (RM), and production support materials (PM) from the Production Planning and Control (PPIC) division to the Warehouse, to Production.",
+  //   link: "#batch-tracker",
+  //   linkText: "Private",
+  //   imgSrc: batchtracker,
+  //   aos: "fade-left",
+  // },
 ];
 
 const Project = () => {

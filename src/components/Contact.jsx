@@ -25,6 +25,7 @@ const Contact = () => {
             </button>
           </Link>
         </div>
+        
         <div className="col-lg-4 text-center">
           <img src={profile} alt="profile.png" data-aos="flip-left" data-aos-duration="900"></img>
           <ul className="list-group list-group-horizontal justify-content-center align-items-center">
