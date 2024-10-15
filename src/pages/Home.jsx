@@ -1,5 +1,5 @@
 // Import CSS
-import "./Home.css";
+import "../css/home.css";
 
 // Import Components
 import Project from "../components/Project";

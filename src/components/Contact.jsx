@@ -17,15 +17,15 @@ const Contact = () => {
             Contact Us
           </h2>
           <p className="py-2 text-lg-end fs-4" data-aos="fade-left" data-aos-duration="800">
-            Want to recruit me? Send a message via email at dimaslaylaa@gmail.com{" "}
+            Want to recruit me? Send a message via email at dmzazz9@gmail.com{" "}
           </p>
-          <Link to="mailto:dimaslaylaa@gmail.com">
+          <Link to="mailto:dmzazz9@gmail.com">
             <button className="border-0 px-4 py-2 float-lg-end" data-aos="fade-left" data-aos-duration="800">
               Let's Chat
             </button>
           </Link>
         </div>
-        
+
         <div className="col-lg-4 text-center">
           <img src={profile} alt="profile.png" data-aos="flip-left" data-aos-duration="900"></img>
           <ul className="list-group list-group-horizontal justify-content-center align-items-center">
