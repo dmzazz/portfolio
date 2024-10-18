@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import selfcare from "../assets/img/project-selfcare.png";
 import undangan from "../assets/img/projects-undangan-2.png";
 import warehouse from "../assets/img/projects-warehouse.png";
-import portofolio from "../assets/img/projects-portofolio.png";
+// import portofolio from "../assets/img/projects-portofolio.png";
 import batchtracker from "../assets/img/project batch tracker.png";
 
 const projects = [
@@ -22,7 +22,7 @@ const projects = [
     id: "undangan",
     title: "Undangan Digital",
     text: "An online invitation in the form of a website to make it easier for users to invite relatives to remote weddings or circumcisions. Built using HTML, CSS, JavaScript and Bootstrap.",
-    link: "https://dymas.my.id",
+    link: "https://undangankita.vercel.app",
     linkText: "View Project",
     imgSrc: undangan,
     aos: "fade-right",
@@ -36,15 +36,15 @@ const projects = [
     imgSrc: warehouse,
     aos: "fade-left",
   },
-  {
-    id: "portofolio",
-    title: "Portfolio CMS WordPress",
-    text: "Another portfolio created using the Wordpress CMS contains educational background to projects that have been made.",
-    link: "https://me.dymas.my.id",
-    linkText: "View Project",
-    imgSrc: portofolio,
-    aos: "fade-right",
-  },
+  // {
+  //   id: "portofolio",
+  //   title: "Portfolio CMS WordPress",
+  //   text: "Another portfolio created using the Wordpress CMS contains educational background to projects that have been made.",
+  //   link: "https://me.dymas.my.id",
+  //   linkText: "View Project",
+  //   imgSrc: portofolio,
+  //   aos: "fade-right",
+  // },
   {
     id: "batch-tracker",
     title: "Batch Tracker",
