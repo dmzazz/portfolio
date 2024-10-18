@@ -13,7 +13,7 @@ const About = () => {
               </p>
               <span className="about-description fs-4">Fresh Graduate at President A university that likes to explore new things</span>
               <p className="about-familiar fs-5 mt-3">
-                <span className="fw-bold">Familiar With:</span> HTML, CSS, JavaScript, Bootstrap, Tailwind, Shadcn, ReactJs, NextJs, Git, Figma
+                <span className="fw-bold">Familiar With:</span> HTML, CSS, JavaScript, Bootstrap, Tailwind, Shadcn, ReactJs, NextJs, Git, Figma, Responsive Web Design
               </p>
             </div>
             <div className="head-image col text-center">
