@@ -158,6 +158,17 @@ nav {
   background-color: #537fe7;
 }
 
+/* Lunar Studio Cikarang Design */
+
+#projects .lunar-studio-cikarang-design {
+  background: rgb(255, 220, 155);
+  background: linear-gradient(90deg, rgba(255, 220, 155, 1) 0%, rgba(255, 197, 95, 1) 100%);
+}
+
+#projects .lunar-studio-cikarang-design .view-project {
+  background-color: #537fe7;
+}
+
 /* Smart Fire Evcuation System */
 
 #projects .smart-fire-evacuation-system {

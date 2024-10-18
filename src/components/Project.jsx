@@ -7,6 +7,7 @@ import undangan from "../assets/img/projects-undangan-2.png";
 import warehouse from "../assets/img/projects-warehouse.png";
 // import portofolio from "../assets/img/projects-portofolio.png";
 import batchtracker from "../assets/img/project batch tracker.png";
+import uilunarstudio from "../assets/img/ui-ux-design.png";
 
 const projects = [
   {
@@ -52,6 +53,15 @@ const projects = [
     link: "#batch-tracker",
     linkText: "Private",
     imgSrc: batchtracker,
+    aos: "fade-left",
+  },
+  {
+    id: "lunar-studio-cikarang-design",
+    title: "Lunar Studio Cikarang Design",
+    text: "Design Lunar Studio Cikarang",
+    link: "https://www.figma.com/proto/Fr15pvhJ5jIi57wKctDbz3/Skripsi-Ine?node-id=30-45&node-type=canvas&t=o48zliZRQXx6uuYu-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1",
+    linkText: "See Design",
+    imgSrc: uilunarstudio,
     aos: "fade-left",
   },
   // {
