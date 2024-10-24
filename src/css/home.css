@@ -150,8 +150,8 @@ nav {
 /* Batch tracker */
 
 #projects .batch-tracker {
-  background: rgb(155, 255, 202);
-  background: linear-gradient(90deg, rgba(155, 255, 202, 1) 0%, rgba(95, 255, 180, 1) 100%);
+  background: rgb(111, 228, 144);
+  background: linear-gradient(90deg, rgba(111, 228, 144, 1) 0%, rgba(53, 205, 44, 1) 100%);
 }
 
 #projects .batch-tracker .view-project {
