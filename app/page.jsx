@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="before:content-[''] before:absolute before:inset-0 before:bg-dots before:opacity-20">
+    <div className="before:content-[''] before:absolute before:inset-0 before:bg-dots before:opacity-20 select-none ">
       <div className="relative w-10/12 lg:w-3/4 mx-auto py-6">
         {/* Top */}
         <section>
