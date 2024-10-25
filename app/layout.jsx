@@ -8,7 +8,7 @@ const roboto = Roboto({
 });
 
 export const metadata = {
-  title: "Dimas Azizir",
+  title: "Dimas Azizir - Frontend Engineer",
   description: "Dimas Azizir personal website",
 };
 

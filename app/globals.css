@@ -35,3 +35,15 @@ body {
   color: var(--text-second);
   background: var(--background-main);
 }
+
+h2,
+h3 {
+  font-family: "Courier New", Courier, monospace;
+}
+
+@layer utilities {
+  .bg-dots {
+    background-image: radial-gradient(circle, #cccccc 1px, transparent 1px);
+    background-size: 35px 35px;
+  }
+}
