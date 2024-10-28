@@ -64,7 +64,7 @@ export default function Home() {
                   {index < workExperience.length && <span className="absolute left-0 top-0 h-full border-l-2 border-red-500" />}
                   <div className="flex justify-between items-center">
                     <h3 className="font-semibold">{work.company}</h3>
-                    <p>{work.date}</p>
+                    <p className="text-sm">{work.date}</p>
                   </div>
 
                   <p className="text-sm">{work.position}</p>
