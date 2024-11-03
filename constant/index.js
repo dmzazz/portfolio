@@ -7,9 +7,9 @@ export const workExperience = [
   },
   {
     company: "VOCASIA",
-    position: "Frontend Web Developer Intern",
+    position: "MSIB Front-End Web Developer",
     date: "Aug 2023 - Des 2023",
-    tech: ["ReactJS", "JSON Web Server"],
+    tech: ["ReactJS", "JSON Server"],
   },
 ];
 

@@ -25,7 +25,7 @@ export default function Home() {
           <div className="mt-16">
             <h2 className="text-lg font-semibold">About.</h2>
             <p className="md:w-1/2 mt-4">
-              graduates from <span className="font-semibold">President University</span> who have an interest in the field of <span className="text-red-500 font-semibold">Frontend Engineer</span>
+             A graduates from <span className="font-semibold">President University</span> who have an interest in the field of <span className="text-red-500 font-semibold">Frontend Engineer</span>
             </p>
             <ul className="flex gap-5 mt-2">
               {socialMedia.map((social, index) => (
