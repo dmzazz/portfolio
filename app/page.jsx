@@ -14,7 +14,7 @@ export default function Home() {
                 Dimas Azizir <span className="bg-white text-main text-sm uppercase p-1 ml-1">hi.</span>
               </h2>
             </div>
-            <Link href="https://drive.google.com/file/d/11U-jcIuybeCKDILAfOtCGwD78Z0TPxux/view?usp=drive_link" target="_blank">
+            <Link href="https://drive.google.com/file/d/1crw4-xNk9-j0uGo_qzrpKTr11yAvbZ8r/view?usp=sharing" target="_blank">
               <button className="bg-background-second hover:bg-[#a0153e] hover:skew-y-3 text-white font-bold py-2 px-4 rounded duration-300">Resume</button>
             </Link>
           </div>
@@ -25,7 +25,7 @@ export default function Home() {
           <div className="mt-16">
             <h2 className="text-lg font-semibold">About.</h2>
             <p className="md:w-1/2 mt-4">
-             A graduates from <span className="font-semibold">President University</span> who have an interest in the field of <span className="text-red-500 font-semibold">Frontend Engineer</span>
+              A graduates from <span className="font-semibold">President University</span> who have an interest in the field of <span className="text-red-500 font-semibold">Frontend Engineer</span>
             </p>
             <ul className="flex gap-5 mt-2">
               {socialMedia.map((social, index) => (
