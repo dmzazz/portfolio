@@ -14,9 +14,14 @@ export default function Home() {
                 Dimas Azizir <span className="bg-white text-main text-sm uppercase p-1 ml-1">hi.</span>
               </h2>
             </div>
-            <Link href="https://drive.google.com/file/d/1crw4-xNk9-j0uGo_qzrpKTr11yAvbZ8r/view?usp=sharing" target="_blank">
-              <button className="bg-background-second hover:bg-[#a0153e] hover:skew-y-3 text-white font-bold py-2 px-4 rounded duration-300">Resume</button>
-            </Link>
+            <div className="flex gap-4">
+              <Link href="https://drive.google.com/file/d/1crw4-xNk9-j0uGo_qzrpKTr11yAvbZ8r/view?usp=sharing" target="_blank">
+                <button className="bg-background-second hover:bg-[#a0153e] hover:skew-y-3 text-white font-bold py-2 px-4 rounded duration-300">Resume</button>
+              </Link>
+              <Link href="https://drive.google.com/file/d/1KZ7BEtVz7MGqxLTDDtR1DvTXwbqy4829/view?usp=sharing" target="_blank">
+                <button className="bg-background-second hover:bg-[#a0153e] hover:skew-y-3 text-white font-bold py-2 px-4 rounded duration-300">Detail Portfolio</button>
+              </Link>
+            </div>
           </div>
         </section>
 
