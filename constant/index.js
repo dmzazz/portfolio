@@ -1,3 +1,55 @@
+export const skills = [
+  {
+    name: "html",
+    image: "https://img.icons8.com/color/48/000000/html-5--v1.png"
+  },
+  {
+    name: "css",
+    image: "https://img.icons8.com/color/48/000000/css3.png"
+  },
+  {
+    name: "javascript",
+    image: "https://img.icons8.com/color/48/000000/javascript--v1.png"
+  },
+  {
+    name: "react",
+    image: "https://img.icons8.com/color/48/000000/react-native.png"
+  },
+  {
+    name: "nextjs",
+    image: "/icon/nextjs.png"
+  },
+  {
+    name: "node",
+    image: "https://img.icons8.com/color/48/000000/nodejs.png"
+  },
+  {
+    name: "mongodb",
+    image: "https://img.icons8.com/color/48/000000/mongodb.png"
+  },
+  {
+    name: "git",
+    image: "https://img.icons8.com/color/48/000000/git.png"
+  },
+  {
+    name: "figma",
+    image: "https://img.icons8.com/color/48/000000/figma--v2.png"
+  },
+]
+
+export const education = [
+  {
+    name: "SMKN 1 Cikarang Selatan",
+    major: "Teknik Mesin",
+    batch: "2015 - 2018",
+  },
+  {
+    name: "President University",
+    major: "Information System",
+    batch: "2021 - 2024",
+  },
+]
+
 export const workExperience = [
   {
     company: "PT. Bintang Toedjoe",
@@ -7,9 +59,9 @@ export const workExperience = [
   },
   {
     company: "VOCASIA",
-    position: "MSIB Front-End Web Developer",
+    position: "Frontend Web Developer Intern",
     date: "Aug 2023 - Des 2023",
-    tech: ["ReactJS", "JSON Server"],
+    tech: ["ReactJS", "JSON Web Server"],
   },
 ];
 
@@ -71,7 +123,8 @@ export const projects = [
   },
   {
     title: "Warehouse Management System",
-    description: "An application that functions to record incoming and outgoing goods.",
+    description:
+      "Stocktifity is a warehouse management system designed to help businesses manage their inventory and supply chain more effectively. It provides real-time visibility into inventory levels, enables efficient order fulfillment, and helps reduce errors and costs associated with manual processes.",
     tech: ["ReactJS", "ExpressJS", "NodeJS", "MongoDB"],
     github: "https://github.com/whend12/Warehouse-Stocktifity",
     website: "",

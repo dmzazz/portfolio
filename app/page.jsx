@@ -1,25 +1,29 @@
-import { projects, socialMedia, workExperience } from "@/constant";
+import { education, projects, skills, socialMedia, workExperience } from "@/constant";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="before:content-[''] before:absolute before:inset-0 before:bg-dots before:opacity-20 select-none ">
+    <div className="relative before:content-[''] before:absolute before:inset-0 before:bg-dots before:opacity-20">
       <div className="relative w-10/12 lg:w-3/4 mx-auto py-6">
         {/* Top */}
         <section>
           <div className="flex justify-between items-center">
             <div className="flex items-center">
-              <div className="w-1 h-6 bg-background-second mr-1 animate-pulse"></div>
+              <div className="w-1 h-6 bg-background-second mr-1 animate-flash"></div>
               <h2 className="text-xl font-semibold">
-                Dimas Azizir <span className="bg-white text-main text-sm uppercase p-1 ml-1">hi.</span>
+                Dimas Azizir{" "}
+                <span className="bg-white">
+                  <span className="text-main text-sm uppercase p-1 ml-1 animate-flash">hi.</span>
+                </span>
               </h2>
             </div>
-            <div className="flex gap-4">
-              <Link href="https://drive.google.com/file/d/1crw4-xNk9-j0uGo_qzrpKTr11yAvbZ8r/view?usp=sharing" target="_blank">
-                <button className="bg-background-second hover:bg-[#a0153e] hover:skew-y-3 text-white font-bold py-2 px-4 rounded duration-300">Resume</button>
+            <div className="flex gap-2">
+              <Link href="https://wa.me/+6289601768642" target="_blank">
+                <button className="bg-red-500 hover:bg-[#a0153e] hover:-skew-y-3 text-white font-bold py-2 px-4 rounded duration-300">Contact</button>
               </Link>
-              <Link href="https://drive.google.com/file/d/1KZ7BEtVz7MGqxLTDDtR1DvTXwbqy4829/view?usp=sharing" target="_blank">
-                <button className="bg-background-second hover:bg-[#a0153e] hover:skew-y-3 text-white font-bold py-2 px-4 rounded duration-300">Detail Portfolio</button>
+              <Link href="https://drive.google.com/file/d/11U-jcIuybeCKDILAfOtCGwD78Z0TPxux/view?usp=drive_link" target="_blank">
+                <button className="bg-background-second hover:bg-[#a0153e] hover:skew-y-3 text-white font-bold py-2 px-4 rounded duration-300">Resume</button>
               </Link>
             </div>
           </div>
@@ -29,8 +33,9 @@ export default function Home() {
         <section>
           <div className="mt-16">
             <h2 className="text-lg font-semibold">About.</h2>
-            <p className="md:w-1/2 mt-4">
-              A graduates from <span className="font-semibold">President University</span> who have an interest in the field of <span className="text-red-500 font-semibold">Frontend Engineer</span>
+            <p className="md:w-1/2 mt-4 text-justify">
+              Graduates from <span className="font-semibold">President University</span> who have an interest in the field of <span className="text-red-500 font-semibold">Frontend Engineer</span>. strong initiative and ambition to create
+              creative and effective solutions for problems in web development.
             </p>
             <ul className="flex gap-5 mt-2">
               {socialMedia.map((social, index) => (
@@ -44,20 +49,37 @@ export default function Home() {
           </div>
         </section>
 
-        {/* <section>
-        <div className="mt-16">
-          <h2 className="text-center text-lg font-semibold">Familiar with</h2>
-          <div className="flex justify-center items-center gap-5 mt-4">
-            {familiarTech.map((tech, index) => (
-              <ul key={index}>
-                <li>
-                  <Image src={tech.icon} alt="tech" width={75} height={75} />
-                </li>
-              </ul>
-            ))}
+        {/* Familiar */}
+        <section>
+          <div className="mt-16">
+            <h2 className="text-lg font-semibold text-center">Familiar with.</h2>
+            <div className="flex justify-center items-center gap-5 mt-4">
+              {skills.map((skill, index) => (
+                <Image key={index} src={skill.image} alt={skill.name} width={50} height={50} />
+              ))}
+            </div>
           </div>
-        </div>
-      </section> */}
+        </section>
+
+        {/* Education */}
+        <section>
+          <div className="mt-16">
+            <h2 className="text-lg font-semibold">Education.</h2>
+            <div className="relative ml-4">
+              {education.map((edu, index) => (
+                <div key={index} className="mt-4 pl-4 relative">
+                  {index < education.length && <span className="absolute left-0 top-0 h-full border-l-2 border-red-500" />}
+                  <div className="flex justify-between items-center">
+                    <h3 className="font-semibold">{edu.name}</h3>
+                    <p>{edu.batch}</p>
+                  </div>
+
+                  <p className="text-sm">{edu.major}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
 
         {/* Work Experiences */}
         <section>
@@ -69,7 +91,7 @@ export default function Home() {
                   {index < workExperience.length && <span className="absolute left-0 top-0 h-full border-l-2 border-red-500" />}
                   <div className="flex justify-between items-center">
                     <h3 className="font-semibold">{work.company}</h3>
-                    <p className="text-sm">{work.date}</p>
+                    <p>{work.date}</p>
                   </div>
 
                   <p className="text-sm">{work.position}</p>
@@ -112,6 +134,9 @@ export default function Home() {
                       </Link>
                     </div>
                   </div>
+
+                  <p className="mt-4 text-justify">{project.description}</p>
+
                   <div className="flex gap-2 mt-2">
                     {project.tech.map((tech, index) => (
                       <span key={index} className="border border-red-500 text-third rounded-full px-2 text-sm">
@@ -119,8 +144,6 @@ export default function Home() {
                       </span>
                     ))}
                   </div>
-
-                  <p className="mt-4">{project.description}</p>
                 </div>
               ))}
             </div>
