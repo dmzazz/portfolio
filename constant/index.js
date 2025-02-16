@@ -1,41 +1,41 @@
 export const skills = [
   {
     name: "html",
-    image: "https://img.icons8.com/color/48/000000/html-5--v1.png"
+    image: "https://img.icons8.com/color/48/000000/html-5--v1.png",
   },
   {
     name: "css",
-    image: "https://img.icons8.com/color/48/000000/css3.png"
+    image: "https://img.icons8.com/color/48/000000/css3.png",
   },
   {
     name: "javascript",
-    image: "https://img.icons8.com/color/48/000000/javascript--v1.png"
+    image: "https://img.icons8.com/color/48/000000/javascript--v1.png",
   },
   {
     name: "react",
-    image: "https://img.icons8.com/color/48/000000/react-native.png"
+    image: "https://img.icons8.com/color/48/000000/react-native.png",
   },
   {
     name: "nextjs",
-    image: "/icon/nextjs.png"
+    image: "/icon/nextjs.png",
   },
   {
     name: "node",
-    image: "https://img.icons8.com/color/48/000000/nodejs.png"
+    image: "https://img.icons8.com/color/48/000000/nodejs.png",
   },
   {
     name: "mongodb",
-    image: "https://img.icons8.com/color/48/000000/mongodb.png"
+    image: "https://img.icons8.com/color/48/000000/mongodb.png",
   },
   {
     name: "git",
-    image: "https://img.icons8.com/color/48/000000/git.png"
+    image: "https://img.icons8.com/color/48/000000/git.png",
   },
   {
     name: "figma",
-    image: "https://img.icons8.com/color/48/000000/figma--v2.png"
+    image: "https://img.icons8.com/color/48/000000/figma--v2.png",
   },
-]
+];
 
 export const education = [
   {
@@ -48,7 +48,7 @@ export const education = [
     major: "Information System",
     batch: "2021 - 2024",
   },
-]
+];
 
 export const workExperience = [
   {
@@ -105,6 +105,20 @@ export const socialMedia = [
 // ];
 
 export const projects = [
+  {
+    title: "Dashboard Job Hunter",
+    description: "A dashboard for employers to easily manage things like updating job postings and receiving information on who applied for the job.",
+    tech: ["TailwindCSS", "NextJS", "PostgreSQL"],
+    github: "https://github.com/dmzazz/dashboard-job-hunt",
+    website: "https://dashboard-jobhunt.vercel.app",
+  },
+  {
+    title: "Job Hunter",
+    description: "Useful for job seekers to get jobs more easily using the job hunter web",
+    tech: ["TailwindCSS", "NextJS", "PostgreSQL"],
+    github: "https://github.com/dmzazz/job-hunt",
+    website: "https://job-hunterr.vercel.app",
+  },
   {
     title: "Batch Tracker",
     description:
