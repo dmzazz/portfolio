@@ -114,7 +114,7 @@ export default function Home() {
             <h2 className="text-lg font-semibold">Projects.</h2>
             <div className="grid md:grid-cols-2 gap-5 mt-4">
               {projects.map((project, index) => (
-                <div key={index} className="border p-3 rounded-lg hover:scale-105 duration-300">
+                <div key={index} className="h-max border p-3 rounded-lg hover:scale-105 duration-300">
                   <div className="flex justify-between items-center">
                     <h3 className="font-semibold">{project.title}</h3>
                     <div className="flex items-center gap-2">
@@ -135,7 +135,7 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div className="w-full">
+                  <div className="w-full mt-2">
                     <img src={project.images} className="w-full" />
                   </div>
 
