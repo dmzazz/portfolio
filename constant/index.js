@@ -121,6 +121,7 @@ export const projects = [
   },
   {
     title: "Batch Tracker",
+    images: "/images/batch-tracker-chart.png",
     description:
       "Provides an accurate and efficient tracking mechanism in the process of submitting and receiving work orders (WO), raw materials (RM), and production support materials (PM) from the Production Planning and Control (PPIC) division to the Warehouse, to Production.",
     tech: ["TailwindCSS", "NextJS", "DotNet", "MySQL"],
@@ -129,6 +130,7 @@ export const projects = [
   },
   {
     title: "SelfCare",
+    images: "/images/selfcare-homepage.png",
     description:
       "Self-Care is a website-based information system so that adolescents can gain insight into psychological problems starting from learning to recognize themselves, knowing about what psychology is and the impact that will be received if ignored and understand when to consult psychology.",
     tech: ["TailwindCSS", "ReactJS", "JSON Server"],
@@ -145,6 +147,7 @@ export const projects = [
   },
   {
     title: "Undangan Digital",
+    images: "/images/undangan-1.png",
     description: "An online invitation in the form of a website to make it easier for users to invite relatives to remote weddings or circumcisions.",
     tech: ["JavaScript", "Bootstrap"],
     github: "https://github.com/dmzazz/undangankita",

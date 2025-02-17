@@ -135,6 +135,10 @@ export default function Home() {
                     </div>
                   </div>
 
+                  <div className="w-full">
+                    <img src={project.images} className="w-full" />
+                  </div>
+
                   <p className="mt-4 text-justify">{project.description}</p>
 
                   <div className="flex gap-2 mt-2">
