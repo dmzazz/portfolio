@@ -107,6 +107,7 @@ export const socialMedia = [
 export const projects = [
   {
     title: "Dashboard Job Hunter",
+    images: "/images/dashboard-jobhunt.png",
     description: "A dashboard for employers to easily manage things like updating job postings and receiving information on who applied for the job.",
     tech: ["TailwindCSS", "NextJS", "PostgreSQL"],
     github: "https://github.com/dmzazz/dashboard-job-hunt",
@@ -114,6 +115,7 @@ export const projects = [
   },
   {
     title: "Job Hunter",
+    images: "/images/job-hunt.png",
     description: "Useful for job seekers to get jobs more easily using the job hunter web",
     tech: ["TailwindCSS", "NextJS", "PostgreSQL"],
     github: "https://github.com/dmzazz/job-hunt",
@@ -139,6 +141,7 @@ export const projects = [
   },
   {
     title: "Warehouse Management System",
+    images: "/images/stocktifity.png",
     description:
       "Stocktifity is a warehouse management system designed to help businesses manage their inventory and supply chain more effectively. It provides real-time visibility into inventory levels, enables efficient order fulfillment, and helps reduce errors and costs associated with manual processes.",
     tech: ["ReactJS", "ExpressJS", "NodeJS", "MongoDB"],
