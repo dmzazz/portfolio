@@ -1,8 +1,18 @@
+"use client";
 import { education, projects, skills, socialMedia, workExperience } from "@/constant";
 import Image from "next/image";
 import Link from "next/link";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 export default function Home() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Durasi animasi
+      once: true, // Animasi hanya berjalan sekali
+    });
+  }, []);
   return (
     <div className="relative before:content-[''] before:absolute before:inset-0 before:bg-dots before:opacity-20">
       <div className="relative w-10/12 lg:w-3/4 mx-auto py-6">
@@ -31,7 +41,7 @@ export default function Home() {
 
         {/* About */}
         <section>
-          <div className="mt-16">
+          <div className="mt-16" data-aos="fade-right">
             <h2 className="text-lg font-semibold">About.</h2>
             <p className="md:w-1/2 mt-4 text-justify">
               Graduates from <span className="font-semibold">President University</span> who have an interest in the field of <span className="text-red-500 font-semibold">Frontend Engineer</span>. strong initiative and ambition to create
@@ -51,7 +61,7 @@ export default function Home() {
 
         {/* Familiar */}
         <section>
-          <div className="mt-16">
+          <div className="mt-16" data-aos="zoom-in">
             <h2 className="text-lg font-semibold text-center">Familiar with.</h2>
             <div className="flex justify-center items-center gap-5 mt-4">
               {skills.map((skill, index) => (
@@ -63,7 +73,7 @@ export default function Home() {
 
         {/* Education */}
         <section>
-          <div className="mt-16">
+          <div className="mt-16" data-aos="zoom-out">
             <h2 className="text-lg font-semibold">Education.</h2>
             <div className="relative ml-4">
               {education.map((edu, index) => (
@@ -83,7 +93,7 @@ export default function Home() {
 
         {/* Work Experiences */}
         <section>
-          <div className="mt-16">
+          <div className="mt-16" data-aos="fade-in">
             <h2 className="text-lg font-semibold">Work Experiences.</h2>
             <div className="relative ml-4">
               {workExperience.map((work, index) => (
@@ -114,7 +124,7 @@ export default function Home() {
             <h2 className="text-lg font-semibold">Projects.</h2>
             <div className="grid md:grid-cols-2 gap-5 mt-4">
               {projects.map((project, index) => (
-                <div key={index} className="h-max border p-3 rounded-lg hover:scale-105 duration-300">
+                <div key={index} className="h-max border p-3 rounded-lg hover:scale-105 duration-300" data-aos="fade-right">
                   <div className="flex justify-between items-center">
                     <h3 className="font-semibold">{project.title}</h3>
                     <div className="flex items-center gap-2">
