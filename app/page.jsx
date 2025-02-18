@@ -136,7 +136,7 @@ export default function Home() {
                   </div>
 
                   <div className="w-full mt-2">
-                    <img src={project.images} className="w-full" />
+                    <img src={project.images} className="w-full h-[20rem]" />
                   </div>
 
                   <p className="mt-4 text-justify">{project.description}</p>
