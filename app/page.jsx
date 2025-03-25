@@ -163,19 +163,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
-        <div className="mt-10">
-          <h2 className="mb-2">My Best Playlist</h2>
-          <iframe
-            src="https://open.spotify.com/embed/playlist/5LQmKYJUotCtALEcBaunmm?utm_source=generator"
-            width="100%"
-            height="352"
-            frameBorder="0"
-            allowFullScreen=""
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-            loading="lazy"
-          ></iframe>
-        </div>
       </div>
     </div>
   );
