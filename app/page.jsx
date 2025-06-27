@@ -1,10 +1,33 @@
 "use client";
-import { education, projects, skills, socialMedia, workExperience } from "@/constant";
-import Image from "next/image";
-import Link from "next/link";
+
+// Import from AOS
 import AOS from "aos";
 import "aos/dist/aos.css";
+
 import { useEffect } from "react";
+
+import Image from "next/image";
+import Link from "next/link";
+
+// Import Components
+import CardSocialMedia from "./components/Card/CardSocialMedia";
+import CardEducation from "./components/Card/CardEducation";
+import CardWorkExperiences from "./components/Card/CardWorkExperiences";
+import CardProjects from "./components/Card/CardProjects";
+
+// Import Icon
+import { FaHtml5 } from "react-icons/fa6";
+import { IoLogoCss3 } from "react-icons/io5";
+import { RiJavascriptFill } from "react-icons/ri";
+import { FaReact } from "react-icons/fa";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { DiBootstrap } from "react-icons/di";
+import { FaGithub } from "react-icons/fa";
+import { FaFigma } from "react-icons/fa";
+import { DiNodejs } from "react-icons/di";
+
+// Source Data
+import { realProjects } from "./data/projects";
 
 export default function Home() {
   useEffect(() => {
@@ -13,157 +36,197 @@ export default function Home() {
       once: true, // Animasi hanya berjalan sekali
     });
   }, []);
+
   return (
-    <div className="relative before:content-[''] before:absolute before:inset-0 before:bg-dots before:opacity-20">
-      <div className="relative w-10/12 lg:w-3/4 mx-auto py-6">
-        {/* Top */}
-        <section>
-          <div className="flex justify-between items-center">
-            <div className="flex items-center">
-              <div className="w-1 h-6 bg-background-second mr-1 animate-flash"></div>
-              <h2 className="text-xl font-semibold">
-                Dimas Azizir{" "}
-                <span className="bg-white">
-                  <span className="text-main text-sm uppercase p-1 ml-1 animate-flash">hi.</span>
-                </span>
-              </h2>
-            </div>
-            <div className="flex gap-2">
-              <Link href="https://wa.me/+6289601768642" target="_blank">
-                <button className="bg-red-500 hover:bg-[#a0153e] hover:-skew-y-3 text-white font-bold py-2 px-4 rounded duration-300">Contact</button>
-              </Link>
-              <Link href="https://drive.google.com/file/d/11U-jcIuybeCKDILAfOtCGwD78Z0TPxux/view?usp=drive_link" target="_blank">
-                <button className="bg-background-second hover:bg-[#a0153e] hover:skew-y-3 text-white font-bold py-2 px-4 rounded duration-300">Resume</button>
-              </Link>
-            </div>
-          </div>
-        </section>
+    <>
+      {/* Left */}
+      <div className="bg-white md:fixed md:left-0 md:top-0 md:h-screen md:w-5/12 md:overflow-y-auto">
+        <div className="absolute top-2 left-2 flex gap-1" data-aos="fade-right">
+          <div className="bg-red-500 w-5 h-5 rounded-full"></div>
+          <div className="bg-yellow-500 w-5 h-5 rounded-full"></div>
+          <div className="bg-green-500 w-5 h-5 rounded-full"></div>
+        </div>
 
-        {/* About */}
-        <section>
-          <div className="mt-16" data-aos="fade-right">
-            <h2 className="text-lg font-semibold">About.</h2>
-            <p className="md:w-1/2 mt-4 text-justify">
-              Graduates from <span className="font-semibold">President University</span> who have an interest in the field of <span className="text-red-500 font-semibold">Frontend Engineer</span>. strong initiative and ambition to create
-              creative and effective solutions for problems in web development.
-            </p>
-            <ul className="flex gap-5 mt-2">
-              {socialMedia.map((social, index) => (
-                <li key={index}>
-                  <Link href={social.link} target="_blank">
-                    <span className="hover:text-red-500">{social.icon}</span>
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </section>
+        {/* Profile */}
+        <div className="px-10 pt-14 md:px-20 md:py-24">
+          {/* Profile Image */}
+          <div className="relative mb-20">
+            <div className="absolute -top-2 bg-gray-700 p-3 drop-shadow-lg rounded-full animate-bounce-2.6s" data-aos="zoom-in" data-aos-delay="1000">
+              <Image src="https://img.icons8.com/ios-filled/100/ffffff/javascript.png" alt="javascript" width={17} height={17} loading="lazy" />
+            </div>
+            <div className="absolute left-[265px] sm:left-72 top-10 bg-gray-700 p-3 drop-shadow-lg rounded-full animate-bounce-1.5s" data-aos="zoom-in" data-aos-delay="1800">
+              <Image src="https://img.icons8.com/ios-filled/100/ffffff/react-native.png" alt="react.js" width={17} height={17} loading="lazy" />
+            </div>
 
-        {/* Familiar */}
-        <section>
-          <div className="mt-16" data-aos="zoom-in">
-            <h2 className="text-lg font-semibold text-center">Familiar with.</h2>
-            <div className="grid grid-cols-3 justify-items-center sm:flex sm:justify-center sm:items-center gap-5 mt-4">
-              {skills.map((skill, index) => (
-                <Image key={index} src={skill.image} alt={skill.name} width={50} height={50} />
-              ))}
+            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+              <div className="hover:skew-y-6 duration-300 transition-transform inline-block rounded-full border-4 border-white bg-gray-200 drop-shadow-xl overflow-hidden w-[250px] h-[250px]">
+                <Image src="/images/dimas-azizir.png" alt="dimas azizir" width={250} height={250} className="object-cover w-full h-full" />
+              </div>
+            </div>
+
+            <div className="absolute left-5 -bottom-10 bg-gray-700 p-3 drop-shadow-lg rounded-full animate-bounce-1.8s" data-aos="zoom-in" data-aos-delay="1400">
+              <Image src="https://img.icons8.com/ios-filled/100/ffffff/html.png" alt="javascript" width={17} height={17} loading="lazy" />
+            </div>
+            <div className="absolute bottom-0 left-64 bg-gray-700 p-3 drop-shadow-lg rounded-full animate-bounce-2.2s" data-aos="zoom-in" data-aos-delay="2000">
+              <Image src="https://img.icons8.com/ios-filled/100/ffffff/css.png" alt="react.js" width={17} height={17} loading="lazy" />
             </div>
           </div>
-        </section>
 
-        {/* Education */}
-        <section>
-          <div className="mt-16" data-aos="zoom-out">
-            <h2 className="text-lg font-semibold">Education.</h2>
-            <div className="relative ml-4">
-              {education.map((edu, index) => (
-                <div key={index} className="mt-4 pl-4 relative">
-                  {index < education.length && <span className="absolute left-0 top-0 h-full border-l-2 border-red-500" />}
-                  <div className="flex justify-between items-center">
-                    <h3 className="font-semibold">{edu.name}</h3>
-                    <p>{edu.batch}</p>
-                  </div>
-
-                  <p className="text-sm">{edu.major}</p>
-                </div>
-              ))}
-            </div>
+          {/* Profile Description */}
+          <div className="text-color-main font-bold text-5xl my-4" data-aos="fade-up">
+            Dimas Azizir
           </div>
-        </section>
-
-        {/* Work Experiences */}
-        <section>
-          <div className="mt-16" data-aos="fade-in">
-            <h2 className="text-lg font-semibold">Work Experiences.</h2>
-            <div className="relative ml-4">
-              {workExperience.map((work, index) => (
-                <div key={index} className="mt-4 pl-4 relative">
-                  {index < workExperience.length && <span className="absolute left-0 top-0 h-full border-l-2 border-red-500" />}
-                  <div className="flex justify-between items-center">
-                    <h3 className="font-semibold">{work.company}</h3>
-                    <p>{work.date}</p>
-                  </div>
-
-                  <p className="text-sm">{work.position}</p>
-                  <div className="flex flex-wrap gap-2 mt-2">
-                    {work.tech.map((tech, idx) => (
-                      <span key={idx} className="border border-red-500 text-third rounded-full px-2 text-sm">
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
+          <div className="mt-5" data-aos="fade-up">
+            <p className="text-color-second text-xl">💻 Front-End Developer</p>
+            <p className="text-color-second text-xl">📍 Bekasi, Jawa Barat, Indonesia</p>
+            <p className="text-color-second text-xl my-1">✉️ dmzazz9@gmail.com</p>
+            <p className="text-color-second text-xl">💼 Open to work: Full-time / Contract / Freelance</p>
           </div>
-        </section>
-
-        {/* Projects */}
-        <section>
-          <div className="mt-16">
-            <h2 className="text-lg font-semibold">Projects.</h2>
-            <div className="grid md:grid-cols-2 gap-5 mt-4">
-              {projects.map((project, index) => (
-                <div key={index} className="h-max border p-3 rounded-lg hover:scale-105 duration-300" data-aos="fade-right">
-                  <div className="flex justify-between items-center">
-                    <h3 className="font-semibold">{project.title}</h3>
-                    <div className="flex items-center gap-2">
-                      <Link href={project.github} target="_blank">
-                        {project.github && (
-                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" className="hover:text-red-500">
-                            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.39.6.11.82-.26.82-.58v-2.16c-3.34.72-4.04-1.6-4.04-1.6-.55-1.4-1.35-1.78-1.35-1.78-1.1-.75.08-.73.08-.73 1.22.09 1.86 1.26 1.86 1.26 1.08 1.85 2.84 1.31 3.54 1 .11-.78.42-1.31.76-1.61-2.66-.3-5.47-1.33-5.47-5.91 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.52 11.52 0 013.01-.4c1.02.01 2.05.14 3.01.4 2.3-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.59-2.81 5.61-5.49 5.9.43.37.82 1.1.82 2.23v3.31c0 .32.22.7.83.58C20.56 21.8 24 17.3 24 12 24 5.37 18.63 0 12 0z" />
-                          </svg>
-                        )}
-                      </Link>
-                      <Link href={project.website}>
-                        {project.website && (
-                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" className="hover:text-red-500">
-                            <path d="M10.59 13.41a1 1 0 0 0 1.41 0l4.24-4.24a1 1 0 1 0-1.41-1.41l-4.24 4.24a1 1 0 0 0 0 1.41zm-4.95 6.36A5 5 0 0 1 3 13.66l1.41-1.41a5 5 0 0 1 7.07 0 1 1 0 1 0 1.41-1.41 7 7 0 0 0-9.9 0L1.58 12.24a7 7 0 0 0 0 9.9 7 7 0 0 0 9.9 0l1.41-1.41a1 1 0 1 0-1.41-1.41l-1.41 1.41a5 5 0 0 1-7.07 0zm16.97-16.97a7 7 0 0 0-9.9 0l-1.41 1.41a1 1 0 1 0 1.41 1.41l1.41-1.41a5 5 0 0 1 7.07 0 5 5 0 0 1 0 7.07l-1.41 1.41a5 5 0 0 1-7.07 0 1 1 0 1 0-1.41 1.41 7 7 0 0 0 9.9 0l1.41-1.41a7 7 0 0 0 0-9.9z" />
-                          </svg>
-                        )}
-                      </Link>
-                    </div>
-                  </div>
-
-                  <div className="w-full mt-2">
-                    <img src={project.images} className="w-full h-[20rem]" />
-                  </div>
-
-                  <p className="mt-4 text-justify">{project.description}</p>
-
-                  <div className="flex gap-2 mt-2">
-                    {project.tech.map((tech, index) => (
-                      <span key={index} className="border border-red-500 text-third rounded-full px-2 text-sm">
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+        </div>
       </div>
-    </div>
+
+      {/* right */}
+      <div className="md:ml-[41.666667%] p-10 bg-white md:min-h-screen">
+        <div className="space-y-10">
+          <p className="text-color-second" data-aos="fade-down">
+            Graduates from <strong>President University</strong> who have an interest in the field of{" "}
+              <strong>Frontend Developer</strong>
+            . Strong initiative and ambition to create creative and effective solutions for problems in web development.
+          </p>
+
+          {/* Social Media */}
+          <div id="social-media">
+            <h2 className="sticky top-2 text-color-main font-bold text-lg z-50" data-aos="fade-down-right">
+              👋🏻 Check this out!
+            </h2>
+            <div className="mt-5 grid grid-cols-1 gap-5 sm:grid-cols-3">
+              <Link href="https://www.linkedin.com/in/dimas-azizir" target="_blank">
+                <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+                  <CardSocialMedia icon="https://img.icons8.com/ios-filled/100/0077B5/linkedin.png" description="👋🏻 Let's Connect" link="linkedin.com" />
+                </div>
+              </Link>
+              <Link href="https://www.linkedin.com/in/dimas-azizir-261661198/" target="_blank">
+                <div className="ml-16 sm:ml-0" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-delay="750" data-aos-duration="1000">
+                  <CardSocialMedia
+                    icon="https://storage.googleapis.com/creatorspace-public/sites%2Ffavicons%2FaHR0cHM6Ly9zc2wuZ3N0YXRpYy5jb20vaW1hZ2VzL2JyYW5kaW5nL3Byb2R1Y3QvMXgvZHJpdmVfMjAyMHE0XzMyZHAucG5n.png"
+                    description="📄 Latest Resume"
+                    link="drive.google.com"
+                  />
+                </div>
+              </Link>
+              <Link href="https://github.com/dmzazz" target="_blank">
+                <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-delay="1500" data-aos-duration="1000">
+                  <CardSocialMedia icon="https://img.icons8.com/ios-filled/100/000000/github.png" description="🧑‍💻 Let's Connect" link="github.com" />
+                </div>
+              </Link>
+            </div>
+          </div>
+
+          {/* Education */}
+          <div id="education">
+            <h2 className="sticky top-2 text-color-main font-bold text-lg z-50" data-aos="fade-down-right">
+              📖 Education
+            </h2>
+            <div className="mt-5" data-aos="zoom-in">
+              <CardEducation educationUrl="https://president.ac.id" educationName="President University" major="Information System" batch="2021 - 2024" />
+            </div>
+          </div>
+
+          {/* Work Experiences */}
+          <div id="work-experiences">
+            <h2 className="sticky top-2 text-color-main font-bold text-lg z-50" data-aos="fade-down-right">
+              💼 Work Experiences
+            </h2>
+            <div className="mt-5 grid lg:grid-cols-1">
+              <div data-aos="fade-down-right" data-aos-delay="300">
+                <Link href="https://bintang7.com" target="_blank">
+                  <CardWorkExperiences
+                    imageUrl="/images/company/pt-bintang-toedjoe.jpg"
+                    imageDescription="PT Bintang Toedjoe"
+                    companyName="PT Bintang Toedjoe"
+                    division="Business Operation Intern"
+                    years="Jan 2024 - Aug 2024"
+                    skills="Next.Js | .Net | Tailwind | MySql | UIPath"
+                  />
+                </Link>
+              </div>
+              <div className="mt-5 lg:ml-28" data-aos="fade-down-right" data-aos-delay="600">
+                <Link href="https://vocasia.id" target="_blank">
+                  <CardWorkExperiences imageUrl="/images/company/vocasia.png" imageDescription="Vocasia" companyName="Vocasia" division="MSIB Front-End Web Developer" years="Aug 2023 - Des 2023" skills="React.Js" />
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          {/* Real Projects */}
+          <div id="real-projects">
+            <h2 className="sticky top-2 text-color-main font-bold text-lg z-50" data-aos="fade-down-right">
+              🧠 Real Projects
+            </h2>
+            <div className="pb-10 mt-5 grid xl:grid-cols-2 gap-5" data-aos="fade-right">
+              {realProjects.map((project, index) => (
+                <CardProjects key={index} {...project} />
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Fixed Right */}
+      <div className="w-max fixed top-1/3 right-0 bg-slate-400 bg-opacity-35 hover:bg-opacity-75 p-1 rounded-full" data-aos="fade-left">
+        <div className="flex flex-col gap-2">
+          <a href="#social-media">
+            <span>👋🏻</span>
+          </a>
+          <a href="#education">
+            <span>📖</span>
+          </a>
+          <a href="#work-experiences">
+            <span>💼</span>
+          </a>
+          <a href="#real-projects">
+            <span>🧠</span>
+          </a>
+        </div>
+      </div>
+
+      {/* Fixed Bottom */}
+      <div className="w-full fixed bottom-0 bg-gray-400 bg-opacity-30 py-2" data-aos="zoom-in">
+        <marquee>
+          <div className="flex items-center gap-2">
+            <span className="text-color-main">Skills:</span>
+            <span className="bg-gray-700 p-2 rounded-full">
+              <FaHtml5 />
+            </span>
+            <span className="bg-gray-700 p-2 rounded-full">
+              <IoLogoCss3 />
+            </span>
+            <span className="bg-gray-700 p-2 rounded-full">
+              <RiJavascriptFill />
+            </span>
+            <span className="bg-gray-700 p-2 rounded-full">
+              <FaReact />
+            </span>
+            <span className="bg-gray-700 p-2 rounded-full">
+              <DiNodejs />
+            </span>
+            <span className="bg-gray-700 p-2 rounded-full">
+              <RiTailwindCssFill />
+            </span>
+            <span className="bg-gray-700 p-2 rounded-full">
+              <DiBootstrap />
+            </span>
+
+            <span className="text-color-main ml-10">Tools:</span>
+            <span className="bg-gray-700 p-2 rounded-full">
+              <FaGithub />
+            </span>
+            <span className="bg-gray-700 p-2 rounded-full">
+              <FaFigma />
+            </span>
+          </div>
+        </marquee>
+      </div>
+    </>
   );
 }

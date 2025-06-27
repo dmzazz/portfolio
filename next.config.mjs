@@ -2,9 +2,8 @@
 const nextConfig = {
   images: {
     remotePatterns: [
-      {
-        hostname: "img.icons8.com",
-      },
+      { protocol: "https", hostname: "img.icons8.com" },
+      { protocol: "https", hostname: "storage.googleapis.com" },
     ],
   },
 };
