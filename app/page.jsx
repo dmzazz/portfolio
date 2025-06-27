@@ -105,7 +105,7 @@ export default function Home() {
                   <CardSocialMedia icon="https://img.icons8.com/ios-filled/100/0077B5/linkedin.png" description="👋🏻 Let's Connect" link="linkedin.com" />
                 </div>
               </Link>
-              <Link href="https://www.linkedin.com/in/dimas-azizir-261661198/" target="_blank">
+              <Link href="https://drive.google.com/file/d/1R9A0hzZadXnnoChqIxaAWvWFoR85OMZ3/view?usp=sharing" target="_blank">
                 <div className="ml-16 sm:ml-0" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-delay="750" data-aos-duration="1000">
                   <CardSocialMedia
                     icon="https://storage.googleapis.com/creatorspace-public/sites%2Ffavicons%2FaHR0cHM6Ly9zc2wuZ3N0YXRpYy5jb20vaW1hZ2VzL2JyYW5kaW5nL3Byb2R1Y3QvMXgvZHJpdmVfMjAyMHE0XzMyZHAucG5n.png"
