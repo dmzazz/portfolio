@@ -136,7 +136,7 @@ export default function Home() {
             <h2 className="sticky top-2 text-color-main font-bold text-lg z-50" data-aos="fade-down-right">
               💼 Work Experiences
             </h2>
-            <div className="mt-5 grid lg:grid-cols-1">
+            <div className="mt-5 grid lg:grid-cols-2">
               <div data-aos="fade-down-right" data-aos-delay="300">
                 <Link href="https://bintang7.com" target="_blank">
                   <CardWorkExperiences
@@ -149,7 +149,7 @@ export default function Home() {
                   />
                 </Link>
               </div>
-              <div className="mt-5 lg:ml-28" data-aos="fade-down-right" data-aos-delay="600">
+              <div className="mt-5 lg:mt-0" data-aos="fade-down-right" data-aos-delay="600">
                 <Link href="https://vocasia.id" target="_blank">
                   <CardWorkExperiences imageUrl="/images/company/vocasia.png" imageDescription="Vocasia" companyName="Vocasia" division="MSIB Front-End Web Developer" years="Aug 2023 - Des 2023" skills="React.Js" />
                 </Link>
