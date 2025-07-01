@@ -52,10 +52,10 @@ export default function Home() {
           {/* Profile Image */}
           <div className="relative mb-20">
             <div className="absolute -top-2 bg-gray-700 p-3 drop-shadow-lg rounded-full animate-bounce-2.6s" data-aos="zoom-in" data-aos-delay="1000">
-              <Image src="https://img.icons8.com/ios-filled/100/ffffff/javascript.png" alt="javascript" width={17} height={17} loading="lazy" />
+              <RiJavascriptFill />
             </div>
             <div className="absolute left-[265px] sm:left-72 top-10 bg-gray-700 p-3 drop-shadow-lg rounded-full animate-bounce-1.5s" data-aos="zoom-in" data-aos-delay="1800">
-              <Image src="https://img.icons8.com/ios-filled/100/ffffff/react-native.png" alt="react.js" width={17} height={17} loading="lazy" />
+              <FaReact />
             </div>
 
             <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
@@ -65,10 +65,10 @@ export default function Home() {
             </div>
 
             <div className="absolute left-5 -bottom-10 bg-gray-700 p-3 drop-shadow-lg rounded-full animate-bounce-1.8s" data-aos="zoom-in" data-aos-delay="1400">
-              <Image src="https://img.icons8.com/ios-filled/100/ffffff/html.png" alt="javascript" width={17} height={17} loading="lazy" />
+              <FaHtml5 />
             </div>
             <div className="absolute bottom-0 left-64 bg-gray-700 p-3 drop-shadow-lg rounded-full animate-bounce-2.2s" data-aos="zoom-in" data-aos-delay="2000">
-              <Image src="https://img.icons8.com/ios-filled/100/ffffff/css.png" alt="react.js" width={17} height={17} loading="lazy" />
+              <IoLogoCss3 />
             </div>
           </div>
 
@@ -89,9 +89,8 @@ export default function Home() {
       <div className="md:ml-[41.666667%] p-10 bg-white md:min-h-screen">
         <div className="space-y-10">
           <p className="text-color-second" data-aos="fade-down">
-            Graduates from <strong>President University</strong> who have an interest in the field of{" "}
-              <strong>Frontend Developer</strong>
-            . Strong initiative and ambition to create creative and effective solutions for problems in web development.
+            Graduates from <strong>President University</strong> who have an interest in the field of <strong>Frontend Developer</strong>. Strong initiative and ambition to create creative and effective solutions for problems in web
+            development.
           </p>
 
           {/* Social Media */}
